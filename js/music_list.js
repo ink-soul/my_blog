@@ -9,6 +9,6 @@ const ap = new APlayer({
         artist:'童嘎',
         url:'http://music.163.com/song/media/outer/url?id=1807478678.mp3',
         cover:'https://cdn.jsdelivr.net/gh/ink-soul/blog_images/cover1.jpg'
-    }],
+    }]
     
 })
