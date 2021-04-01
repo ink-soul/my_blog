@@ -60,6 +60,7 @@
             <div class="site-branding" style="margin-bottom: 71px;">
                 <div class="wrap">
                     <!--主题文字和旁边文字并嵌入链接-->
+                    
                     <a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img
                             width="250" height="250" src="https://cdn.jsdelivr.net/gh/ink-soul/blog_images/icon_normal.png"
                             class="custom-logo" alt="inksou&#39;s Blog"
@@ -67,6 +68,7 @@
                             https://cdn.jsdelivr.net/gh/ink-soul/blog_images/first_page(150w).png 150w
                             https://cdn.jsdelivr.net/gh/ink-soul/blog_images/first_page(100w).png 100w"
                             sizes="100vw"></a>
+                            
                     <div class="site-branding-text">
                         <h1 class="site-title"><a href="./index.html" rel="home">ink-soul's Blog</a></h1>
 
@@ -101,6 +103,7 @@
                             <li id="menu-item-23"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a
                                     href="./pages.html">博客</a></li>
+                            
                         </ul>
                     </div>
                     <a href="#content" class="menu-scroll-down">
@@ -128,6 +131,7 @@
                             <div class="wrap">
                                 <header class="entry-header">
                                     <h2 class="entry-title">首页</h2>
+                                    
 
                                 </header><!-- .entry-header -->
 
@@ -159,16 +163,13 @@
 
                 <aside class="widget-area" role="complementary" aria-label="页脚">
                     <div class="widget-column footer-widget-1">
-                        <section id="custom_html-3" class="widget_text widget widget_custom_html"><h2
-                                class="widget-title">music</h2>
+                        <section id="custom_html-3" class="widget_text widget widget_custom_html">
                             <div class="textwidget custom-html-widget">
-                                <audio controls="controls" autoplay="autoplay" height="100" width="100" loop="true">
-                                    <source src="http://music.163.com/song/media/outer/url?id=1807478678.mp3"
-                                            type="audio/mp3">
-                                    <embed height="100" type="audio/midi" width="100"
-                                           src="http://music.163.com/song/media/outer/url?id=1807478678.mp3" loop="true"
-                                           autostart="true">
-                                </audio>
+                                <!--music-player-->
+                                <link rel="stylesheet" href="node_modules/aplayer/dist/APlayer.min.css">
+                                <div id="aplayer" class="music_list"></div>
+                                <script src="node_modules/aplayer/dist/APlayer.min.js"></script>
+                                
                             </div>
                         </section>
                     </div>
@@ -177,6 +178,7 @@
         </footer><!-- #colophon -->
     </div><!-- .site-content-contain -->
 </div><!-- #page -->
+<script src="js/music_list.js" id="music_list"></script>
 <script src="js/comment.js" id="smms-comment-js-js"></script>
 <script src="js/skip-link-focus-fix.js"
         id="twentyseventeen-skip-link-focus-fix-js"></script>
